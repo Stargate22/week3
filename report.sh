@@ -162,6 +162,22 @@ cat > /var/www/html/viikko3/index.html <<EOF
             text-align: center;
             margin: 30px;
         }
+	.github-button {
+    	    display: inline-block;
+    	    background: #c7d2fe;
+    	    color: #243b64;
+    	    padding: 14px 25px;
+    	    border-radius: 12px;
+    	    text-decoration: none;
+    	    font-weight: bold;
+    	    border: 2px solid #a5b4fc;
+    	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.github-button:hover {
+    	    background: #a5b4fc;
+    	    transform: translateY(-2px);
+	}
     </style>
 </head>
 
@@ -337,16 +353,24 @@ cat > /var/www/html/viikko3/index.html <<EOF
         <h2>What I Learned</h2>
 
         <p>
-            I learned how to use Bash variables,
-            Linux commands and functions to collect
-            information about my server.
+         I learned how to use Bash commands and
+	 variables to collect information about 
+	 my server. I also learned how to use 
+	 cron to update my website automatically
+	 every minute.
         </p>
     </section>
 
     <footer>
-        <p>Linux Course - Week 3</p>
-        <p>GitHub link will be added later.</p>
-    </footer>
+    <p>Linux Course - Week 3</p>
+    <p>
+        <a class="github-button"
+           href="https://github.com/Stargate22/week3"
+           target="_blank" rel="noopener noreferrer">
+            View Project on GitHub ↗
+        </a>
+    </p>
+</footer>
 
 </div> 
 </body>
